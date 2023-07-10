@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png" />
+    <title>Cabecera</title>
+    <style>
+        .logo > a >img{
+            width: 50px;
+            margin: 10px;
+        }
+        .margen_top{
+            margin-top: 10px;
+        }
+        .box{
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 30px;
+            border: solid 1px #f2f2f2;
+        }
+        .bor_qr{
+            border: solid 1px #f2f2f2;
+            margin-left: 20px;
+        }
+        .borde{
+            border: solid 1px #f2f2f2;
+            padding: 30px;
+        }
+        .frm{
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .frm20{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid logo">
+                      <a class="navbar-brand" href="https://wms.adminml.com/" target="_blank"><img src="img/logo2.png" alt="logo"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://wms.adminml.com/reports/inbound-sla/opened" target="_blank">SLA</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://lms.adminml.com/time-assign" target="_blank">LMS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://lms.adminml.com/productivity/checkin" target="_blank">Check</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://lms.adminml.com/productivity/inbound-pick" target="_blank">Pick</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Formularios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScyQGVrXhpGvExfj2vDw9ROzl9Oxx1EVXRVD9ca57galGPEwA/viewform?pli=1&pli=1">INP</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfovq0BL2WxzvG9CaZL_UEjR_-1SNykhhdvucLjqeFt5TEH8Q/viewform">Reapertura</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfovq0BL2WxzvG9CaZL_UEjR_-1SNykhhdvucLjqeFt5TEH8Q/viewform">Faltante de Origen</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              WMS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="https://shipping-bo.adminml.com/users_items/item" target="_blank">Items B.O</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://shipping-bo.adminml.com/sauron/fulfillment/inbound">Sauron B.O</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://wms.adminml.com/reports/totes-containers?sort_field=created_at&limit=10&sort=created_at_asc&page=1&sort_type=asc&offset=0&warehouse_id=MXRC01&size=10">Totes Pendientes</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Herramientas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/spreadsheets/u/0/?tgif=d">Sheets</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://mercadolibre.atlassian.net/servicedesk/customer/user/login?destination=portals">Jira</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://shield.adminml.com/account">Shield</a></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://performancemanager4.successfactors.com/sf/start?_s.crb=DIq9vq1S4P4fM%252bsIvJzKUuBco0YK1BRYGkUcH7VCZbA%253d">Success</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" target="_blank" href="https://lookerstudio.google.com/navigation/reporting">Loocker Studio</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" id="buscarpersona" placeholder="Buscar Persona" aria-label="Buscar">
+                          <button class="btn btn-outline-secondary" type="submit" onclick="buscarp()">Movimientos</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="row justify-content-evenly align-items-center">
+                <div class="col-12 col-md-5 bor_qr frm rounded-5">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <input type="text" id="qrr" class="form-control" placeholder="QR">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-secondary" onclick="qr()">Generar</button>
+                        </div>
+                        <div class="col-auto frm20">
+                            <img alt="Código QR" id="codigo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5  box rounded-5">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="MELI" id="meli">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-secondary" onclick="melim()">Movimientos</button>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-secondary" onclick="melir()">Reporte</button>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-secondary" onclick="meliBO()">B.O</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-12  box rounded-5 col-md-5">
+                <div class="row align-items-center frm">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="UBICACIÓN" id="tote1">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-secondary" onclick="tote1Mov()">Movimiento</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-secondary" onclick="tote1r()">Reporte</button>
+                    </div>
+                </div>
+                <div class="row align-items-center frm">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="MU-TT-RC-" id="tote2">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-secondary" onclick="tote2Mov()">Movimiento</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-secondary" onclick="tote2r()">Reporte</button>
+                    </div>
+                </div>
+                <div class="row align-items-center frm">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="MU-TC-00-" id="tote3">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-secondary" onclick="tote3Mov()">Movimiento</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-secondary" onclick="tote3r()">Reporte</button>
+                    </div>
+                </div>
+                <div class="row align-items-center frm">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="MU-TO-QA-027-" id="tote4">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-secondary" onclick="tote4Mov()">Movimiento</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-secondary" onclick="tote4r()">Reporte</button>
+                    </div>
+                </div>
+                <div class="row align-items-center frm">
+                    <div class="col-2">
+                        <label for="exampleInputEmail1" class="form-label">WT-0-</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="000" id="wt">
+                    </div>
+                    <div class="col-3">
+                        <label for="exampleInputEmail1" class="form-label">-000-00-00</label>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-secondary" onclick="wt()">STAGE</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-md-5">
+                <div class="row align-items-center frm rounded-4 border">
+                    <div class="row frm">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="IS" id="is">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-secondary" onclick="ism()">MOVIMIENTOS</button>
+                        </div>
+                        <div class="row frm justify-content-evenly">
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-outline-secondary" onclick="issla()">SLA</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-outline-secondary" onclick="isstage()">STAGE</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-outline-secondary" onclick="isshipment()">SHIPMENT</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-outline-secondary" onclick="isp()">PENDIENTES</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center frm rounded-4 border">
+                    <div class="row frm align-items-center">
+                        <div class="col-auto">
+                            <label for="exampleInputEmail1" class="form-label">PL-0-</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="000" id="pl1">
+                        </div>
+                        <div class="col-auto">
+                            <label for="exampleInputEmail1" class="form-label">-000-00-</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="00" id="pl2">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-secondary" onclick="pl()">STAGE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center frm rounded-4 border">
+                    <div class="row frm">
+                        <div class="col">
+                            <p class="h6 text-center">PUBLICACIÓN</p>
+                        </div>
+                        <div class="row frm justify-content-evenly">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="MLM-774415902" id="bo">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-outline-secondary" onclick="bo()">B.O</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+    <script>
+        new QRious({
+			element: document.querySelector("#codigo"),
+			value: "http://wms.adminml.com", // La URL o el texto
+			size: 140,
+			backgroundAlpha: 0, // 0 para fondo transparente
+			foreground: "#000000", // Color del QR
+			level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+		    });
+		function qr(){
+            value1=document.getElementById("qrr").value;
+            new QRious({
+			element: document.querySelector("#codigo"),
+			value: value1, // La URL o el texto
+			size: 140,
+			backgroundAlpha: 0, // 0 para fondo transparente
+			foreground: "#000000", // Color del QR
+			level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+		    });
+        }
+        function buscarp(){
+            persona=document.getElementById("buscarpersona").value;
+            link="https://wms.adminml.com/reports/movements?date_from=2023-07-09&date_to=2023-07-09&user="+persona;
+            const date = new Date();
+            const year = date.getFullYear() * 1e4; // 1e4 gives us the the other digits to be filled later, so 20210000.
+            const month = (date.getMonth() + 1) * 100; // months are numbered 0-11 in JavaScript, * 100 to move two digits to the left. 20210011 => 20211100
+            const day = date.getDate(); // 20211100 => 20211124
+            const result = year + month+ day+''; // `+ ''` to convert to string from number, 20211124 => "20211124"
+            const month2=(date.getMonth()) * 100;;
+            const result2=year+month2+day+""; 
+            const fecha=result.substring(0,4)+"-"+result.substring(4,6)+"-"+result.substring(6,8);
+            const fecha2=result2.substring(0,4)+"-"+result2.substring(4,6)+"-"+result2.substring(6,8);
+            window.open("https://wms.adminml.com/reports/movements?date_from="+fecha2+"&date_to="+fecha+"&user="+persona);
+        }
+        function tote1r(){
+            let inputValue1 = document.getElementById("tote1").value; 
+            window.open("https://wms.adminml.com/reports/address?reportAddressStart="+inputValue1)
+        }
+        function tote1Mov(){
+            let inputValue1 = document.getElementById("tote1").value; 
+            const date = new Date();
+            const year = date.getFullYear() * 1e4; // 1e4 gives us the the other digits to be filled later, so 20210000.
+            const month = (date.getMonth() + 1) * 100; // months are numbered 0-11 in JavaScript, * 100 to move two digits to the left. 20210011 => 20211100
+            const day = date.getDate(); // 20211100 => 20211124
+            const result = year + month+ day+''; // `+ ''` to convert to string from number, 20211124 => "20211124"
+            const month2=(date.getMonth()) * 100;;
+            const result2=year+month2+day+""; 
+            const fecha=result.substring(0,4)+"-"+result.substring(4,6)+"-"+result.substring(6,8);
+            const fecha2=result2.substring(0,4)+"-"+result2.substring(4,6)+"-"+result2.substring(6,8);
+            window.open("https://wms.adminml.com/reports/movements?storage_id="+inputValue1+"&date_from="+fecha2+"&date_to="+fecha)
+    
+        }
+        function tote2r(){
+            let inputValue1 = document.getElementById("tote2").value; 
+            window.open("https://wms.adminml.com/reports/address?reportAddressStart=MU-TT-RC-"+inputValue1)
+        }
+        function tote2Mov(){
+            let inputValue1 = document.getElementById("tote2").value; 
+            const date = new Date();
+            const year = date.getFullYear() * 1e4; // 1e4 gives us the the other digits to be filled later, so 20210000.
+            const month = (date.getMonth() + 1) * 100; // months are numbered 0-11 in JavaScript, * 100 to move two digits to the left. 20210011 => 20211100
+            const day = date.getDate(); // 20211100 => 20211124
+            const result = year + month+ day+''; // `+ ''` to convert to string from number, 20211124 => "20211124"
+            const month2=(date.getMonth()) * 100;;
+            const result2=year+month2+day+""; 
+            const fecha=result.substring(0,4)+"-"+result.substring(4,6)+"-"+result.substring(6,8);
+            const fecha2=result2.substring(0,4)+"-"+result2.substring(4,6)+"-"+result2.substring(6,8);
+            window.open("https://wms.adminml.com/reports/movements?storage_id=MU-TT-RC-"+inputValue1+"&date_from="+fecha2+"&date_to="+fecha)
+    
+        }
+        function tote3r(){
+            let inputValue1 = document.getElementById("tote3").value; 
+            window.open("https://wms.adminml.com/reports/address?reportAddressStart=MU-TC-00-"+inputValue1)
+        }
+        function tote3Mov(){
+            let inputValue1 = document.getElementById("tote3").value; 
+            const date = new Date();
+            const year = date.getFullYear() * 1e4; // 1e4 gives us the the other digits to be filled later, so 20210000.
+            const month = (date.getMonth() + 1) * 100; // months are numbered 0-11 in JavaScript, * 100 to move two digits to the left. 20210011 => 20211100
+            const day = date.getDate(); // 20211100 => 20211124
+            const result = year + month+ day+''; // `+ ''` to convert to string from number, 20211124 => "20211124"
+            const month2=(date.getMonth()) * 100;;
+            const result2=year+month2+day+""; 
+            const fecha=result.substring(0,4)+"-"+result.substring(4,6)+"-"+result.substring(6,8);
+            const fecha2=result2.substring(0,4)+"-"+result2.substring(4,6)+"-"+result2.substring(6,8);
+            window.open("https://wms.adminml.com/reports/movements?storage_id=MU-TC-00-"+inputValue1+"&date_from="+fecha2+"&date_to="+fecha)
+    
+        }
+        function tote4r(){
+            let inputValue1 = document.getElementById("tote4").value; 
+            window.open("https://wms.adminml.com/reports/address?reportAddressStart=MU-TO-QA-027-"+inputValue1)
+        }
+        function tote4Mov(){
+            let inputValue1 = document.getElementById("tote4").value; 
+            const date = new Date();
+            const year = date.getFullYear() * 1e4; // 1e4 gives us the the other digits to be filled later, so 20210000.
+            const month = (date.getMonth() + 1) * 100; // months are numbered 0-11 in JavaScript, * 100 to move two digits to the left. 20210011 => 20211100
+            const day = date.getDate(); // 20211100 => 20211124
+            const result = year + month+ day+''; // `+ ''` to convert to string from number, 20211124 => "20211124"
+            const month2=(date.getMonth()) * 100;;
+            const result2=year+month2+day+""; 
+            const fecha=result.substring(0,4)+"-"+result.substring(4,6)+"-"+result.substring(6,8);
+            const fecha2=result2.substring(0,4)+"-"+result2.substring(4,6)+"-"+result2.substring(6,8);
+            window.open("https://wms.adminml.com/reports/movements?storage_id=MU-TO-QA-027-"+inputValue1+"&date_from="+fecha2+"&date_to="+fecha)
+    
+        }
+        function wt(){
+            let inputValue1=document.getElementById("wt").value;
+            window.open("https://wms.adminml.com/reports/stage-in?page=1&address_id=WT-0-"+inputValue1+"-000-00-00");
+        }
+        function melir(){
+            let inputValue1=document.getElementById("meli").value;
+            window.open("https://wms.adminml.com/reports/skus/"+inputValue1);
+        }
+        function meliBO(){
+            let inputValue1=document.getElementById("meli").value;
+            window.open("https://shipping-bo.adminml.com/sauron/fulfillment/inventory/"+inputValue1);
+        }
+        function melim(){
+            let inputValue1 = document.getElementById("meli").value; 
+            const date = new Date();
+            const year = date.getFullYear() * 1e4; // 1e4 gives us the the other digits to be filled later, so 20210000.
+            const month = (date.getMonth() + 1) * 100; // months are numbered 0-11 in JavaScript, * 100 to move two digits to the left. 20210011 => 20211100
+            const day = date.getDate(); // 20211100 => 20211124
+            const result = year + month+ day+''; // `+ ''` to convert to string from number, 20211124 => "20211124"
+            const month2=(date.getMonth()) * 100;;
+            const result2=year+month2+day+""; 
+            const fecha=result.substring(0,4)+"-"+result.substring(4,6)+"-"+result.substring(6,8);
+            const fecha2=result2.substring(0,4)+"-"+result2.substring(4,6)+"-"+result2.substring(6,8);
+            window.open("https://wms.adminml.com/reports/movements?date_from="+fecha2+"&date_to="+fecha+"&inventory_id="+inputValue1)
+    
+        }
+        function ism(){
+            let inputValue1 = document.getElementById("is").value; 
+            const date = new Date();
+            const year = date.getFullYear() * 1e4; // 1e4 gives us the the other digits to be filled later, so 20210000.
+            const month = (date.getMonth() + 1) * 100; // months are numbered 0-11 in JavaScript, * 100 to move two digits to the left. 20210011 => 20211100
+            const day = date.getDate(); // 20211100 => 20211124
+            const result = year + month+ day+''; // `+ ''` to convert to string from number, 20211124 => "20211124"
+            const month2=(date.getMonth()) * 100;;
+            const result2=year+month2+day+""; 
+            const fecha=result.substring(0,4)+"-"+result.substring(4,6)+"-"+result.substring(6,8);
+            const fecha2=result2.substring(0,4)+"-"+result2.substring(4,6)+"-"+result2.substring(6,8);
+            window.open("https://wms.adminml.com/reports/movements?date_from="+fecha2+"&date_to="+fecha+"&external_references.inbound_id="+inputValue1)
+    
+        }
+        function issla(){
+            let inputValue1 = document.getElementById("is").value;
+            window.open("https://wms.adminml.com/reports/inbound-sla/opened?inbound_ids="+inputValue1); 
+        }
+        function isstage(){
+            let inputValue1 = document.getElementById("is").value;
+            window.open("https://wms.adminml.com/reports/stage-in?page=1&inbound_id="+inputValue1); 
+        }
+        function isshipment(){
+            let inputValue1 = document.getElementById("is").value;
+            window.open("https://wms.adminml.com/reports/inbound-shipment?id="+inputValue1); 
+        }
+        function isp(){
+            let inputValue1 = document.getElementById("is").value;
+            window.open("https://wms.adminml.com/reports/totes-containers?inbound_id="+inputValue1); 
+        }
+        function pl(){
+            let inputValue1 = document.getElementById("pl1").value;
+            let inputValue2 = document.getElementById("pl2").value;
+            window.open("https://wms.adminml.com/reports/stage-in?page=1&pallet_id=PL-0-"+inputValue1+"-000-00-"+inputValue2); 
+        }
+        function bo(){
+            let inputValue2 = document.getElementById("bo").value;
+            window.open("https://shipping-bo.adminml.com/users_items/item/id/"+inputValue2);
+        }
+	</script>
+</body>
+</html>
